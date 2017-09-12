@@ -52,6 +52,10 @@ $ git clone https://github.com/toxinoid00/ZeinQillaShop.git
 * [json4swift](http://json4swift.com/) - Utility generates a Swift compatible models 
 * [Icon](https://icons8.com/free-ios-7-icons-in-vector/)
 
-## Authors
+## Author
 
 * **Muhammad Husain Fadhlullah** - [Github](https://github.com/toxinoid00) & [LinkedIn](https://www.linkedin.com/in/muhammad-husain-fadhlullah-90607a119/)
+
+## Donation
+
+[![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZNVLATWPCXR2N)
