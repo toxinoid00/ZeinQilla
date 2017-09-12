@@ -1,0 +1,936 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3EB17F4F0128CF37BC6EEDA3 /* Pods_ZeinQillaShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AA4D6D4EA0C76BB74FA56CA /* Pods_ZeinQillaShop.framework */; };
+		5E4233DE87605B63427DB35D /* Pods_ZeinQillaShopUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF11AB035EF4F40518A4DBEF /* Pods_ZeinQillaShopUITests.framework */; };
+		6A699C931F66365700EB0F04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A699C921F66365700EB0F04 /* AppDelegate.swift */; };
+		6A699C981F66365700EB0F04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A699C961F66365700EB0F04 /* Main.storyboard */; };
+		6A699C9B1F66365700EB0F04 /* ZeinQillaShop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6A699C991F66365700EB0F04 /* ZeinQillaShop.xcdatamodeld */; };
+		6A699C9D1F66365700EB0F04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A699C9C1F66365700EB0F04 /* Assets.xcassets */; };
+		6A699CA01F66365700EB0F04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A699C9E1F66365700EB0F04 /* LaunchScreen.storyboard */; };
+		6A699CAB1F66365700EB0F04 /* ZeinQillaShopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A699CAA1F66365700EB0F04 /* ZeinQillaShopTests.swift */; };
+		6A699CB61F66365700EB0F04 /* ZeinQillaShopUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A699CB51F66365700EB0F04 /* ZeinQillaShopUITests.swift */; };
+		6A699CCB1F66408300EB0F04 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A699CCA1F66408300EB0F04 /* HomeController.swift */; };
+		6A699CCF1F66446800EB0F04 /* HexColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A699CCE1F66446800EB0F04 /* HexColorExtension.swift */; };
+		6A699CD61F66459B00EB0F04 /* PromoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A699CD51F66459B00EB0F04 /* PromoController.swift */; };
+		6A699CD81F6645AF00EB0F04 /* StoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A699CD71F6645AF00EB0F04 /* StoreController.swift */; };
+		6A699CDA1F664BBB00EB0F04 /* PromoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A699CD91F664BBB00EB0F04 /* PromoCell.swift */; };
+		6A699CDD1F66540700EB0F04 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A699CDC1F66540700EB0F04 /* Product.swift */; };
+		6A699CDF1F666A0200EB0F04 /* Banner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A699CDE1F666A0200EB0F04 /* Banner.swift */; };
+		6A699CE11F666EAE00EB0F04 /* HomeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A699CE01F666EAE00EB0F04 /* HomeCell.swift */; };
+		6A699CE31F666EB900EB0F04 /* HomeHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A699CE21F666EB900EB0F04 /* HomeHeaderCell.swift */; };
+		6A699CE51F666F4200EB0F04 /* HomeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A699CE41F666F4200EB0F04 /* HomeCollectionCell.swift */; };
+		6A699CE71F66754600EB0F04 /* Promo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A699CE61F66754500EB0F04 /* Promo.swift */; };
+		6A699CE91F6680D900EB0F04 /* StoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A699CE81F6680D900EB0F04 /* StoreCell.swift */; };
+		6A699CEC1F66816900EB0F04 /* ListStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A699CEB1F66816900EB0F04 /* ListStore.swift */; };
+		6A699CEE1F66818E00EB0F04 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A699CED1F66818E00EB0F04 /* Store.swift */; };
+		6A699CF01F66869800EB0F04 /* StoreDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A699CEF1F66869800EB0F04 /* StoreDetailController.swift */; };
+		6A699CF21F668C5900EB0F04 /* ProductDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A699CF11F668C5900EB0F04 /* ProductDetailController.swift */; };
+		6A699CF41F66909400EB0F04 /* ProductDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A699CF31F66909400EB0F04 /* ProductDetail.swift */; };
+		6A6D851B1F677B0100B84BE5 /* CategoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6D851A1F677B0100B84BE5 /* CategoryController.swift */; };
+		6A6D851D1F677B1B00B84BE5 /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6D851C1F677B1B00B84BE5 /* CategoryCell.swift */; };
+		6A6D851F1F6781D800B84BE5 /* CartController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6D851E1F6781D800B84BE5 /* CartController.swift */; };
+		6A6D85211F67873500B84BE5 /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6D85201F67873500B84BE5 /* CartCell.swift */; };
+		E436292D65F31452EB8CC56A /* Pods_ZeinQillaShopTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 123027261E556A3C6516BF56 /* Pods_ZeinQillaShopTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6A699CA71F66365700EB0F04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A699C871F66365700EB0F04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A699C8E1F66365700EB0F04;
+			remoteInfo = ZeinQillaShop;
+		};
+		6A699CB21F66365700EB0F04 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A699C871F66365700EB0F04 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A699C8E1F66365700EB0F04;
+			remoteInfo = ZeinQillaShop;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		123027261E556A3C6516BF56 /* Pods_ZeinQillaShopTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZeinQillaShopTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E0657FC09A090939ADC1544 /* Pods-ZeinQillaShopUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeinQillaShopUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZeinQillaShopUITests/Pods-ZeinQillaShopUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		3E0EDF149C2F679C9D6D039E /* Pods-ZeinQillaShopTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeinQillaShopTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZeinQillaShopTests/Pods-ZeinQillaShopTests.release.xcconfig"; sourceTree = "<group>"; };
+		51E135A44302EBB35C4B686E /* Pods-ZeinQillaShopTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeinQillaShopTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZeinQillaShopTests/Pods-ZeinQillaShopTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A699C8F1F66365700EB0F04 /* ZeinQillaShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZeinQillaShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A699C921F66365700EB0F04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6A699C971F66365700EB0F04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6A699C9A1F66365700EB0F04 /* ZeinQillaShop.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZeinQillaShop.xcdatamodel; sourceTree = "<group>"; };
+		6A699C9C1F66365700EB0F04 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6A699C9F1F66365700EB0F04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6A699CA11F66365700EB0F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A699CA61F66365700EB0F04 /* ZeinQillaShopTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeinQillaShopTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A699CAA1F66365700EB0F04 /* ZeinQillaShopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeinQillaShopTests.swift; sourceTree = "<group>"; };
+		6A699CAC1F66365700EB0F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A699CB11F66365700EB0F04 /* ZeinQillaShopUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZeinQillaShopUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A699CB51F66365700EB0F04 /* ZeinQillaShopUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeinQillaShopUITests.swift; sourceTree = "<group>"; };
+		6A699CB71F66365700EB0F04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A699CCA1F66408300EB0F04 /* HomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		6A699CCE1F66446800EB0F04 /* HexColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexColorExtension.swift; sourceTree = "<group>"; };
+		6A699CD51F66459B00EB0F04 /* PromoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromoController.swift; sourceTree = "<group>"; };
+		6A699CD71F6645AF00EB0F04 /* StoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreController.swift; sourceTree = "<group>"; };
+		6A699CD91F664BBB00EB0F04 /* PromoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PromoCell.swift; sourceTree = "<group>"; };
+		6A699CDC1F66540700EB0F04 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		6A699CDE1F666A0200EB0F04 /* Banner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Banner.swift; sourceTree = "<group>"; };
+		6A699CE01F666EAE00EB0F04 /* HomeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCell.swift; sourceTree = "<group>"; };
+		6A699CE21F666EB900EB0F04 /* HomeHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeHeaderCell.swift; sourceTree = "<group>"; };
+		6A699CE41F666F4200EB0F04 /* HomeCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeCollectionCell.swift; sourceTree = "<group>"; };
+		6A699CE61F66754500EB0F04 /* Promo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Promo.swift; sourceTree = "<group>"; };
+		6A699CE81F6680D900EB0F04 /* StoreCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreCell.swift; sourceTree = "<group>"; };
+		6A699CEB1F66816900EB0F04 /* ListStore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListStore.swift; sourceTree = "<group>"; };
+		6A699CED1F66818E00EB0F04 /* Store.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		6A699CEF1F66869800EB0F04 /* StoreDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoreDetailController.swift; sourceTree = "<group>"; };
+		6A699CF11F668C5900EB0F04 /* ProductDetailController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailController.swift; sourceTree = "<group>"; };
+		6A699CF31F66909400EB0F04 /* ProductDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetail.swift; sourceTree = "<group>"; };
+		6A6D851A1F677B0100B84BE5 /* CategoryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryController.swift; sourceTree = "<group>"; };
+		6A6D851C1F677B1B00B84BE5 /* CategoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
+		6A6D851E1F6781D800B84BE5 /* CartController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartController.swift; sourceTree = "<group>"; };
+		6A6D85201F67873500B84BE5 /* CartCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
+		7353452DB9F9180B737205A1 /* Pods-ZeinQillaShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeinQillaShop.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZeinQillaShop/Pods-ZeinQillaShop.debug.xcconfig"; sourceTree = "<group>"; };
+		7AA4D6D4EA0C76BB74FA56CA /* Pods_ZeinQillaShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZeinQillaShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4B92F5A640CF80A2F99DFCA /* Pods-ZeinQillaShopUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeinQillaShopUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZeinQillaShopUITests/Pods-ZeinQillaShopUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BF11AB035EF4F40518A4DBEF /* Pods_ZeinQillaShopUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZeinQillaShopUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F802491C77E8A1920AEDD6EE /* Pods-ZeinQillaShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZeinQillaShop.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZeinQillaShop/Pods-ZeinQillaShop.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6A699C8C1F66365700EB0F04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3EB17F4F0128CF37BC6EEDA3 /* Pods_ZeinQillaShop.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A699CA31F66365700EB0F04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E436292D65F31452EB8CC56A /* Pods_ZeinQillaShopTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A699CAE1F66365700EB0F04 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E4233DE87605B63427DB35D /* Pods_ZeinQillaShopUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1008DDFC8336733B04B506CD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7353452DB9F9180B737205A1 /* Pods-ZeinQillaShop.debug.xcconfig */,
+				F802491C77E8A1920AEDD6EE /* Pods-ZeinQillaShop.release.xcconfig */,
+				51E135A44302EBB35C4B686E /* Pods-ZeinQillaShopTests.debug.xcconfig */,
+				3E0EDF149C2F679C9D6D039E /* Pods-ZeinQillaShopTests.release.xcconfig */,
+				1E0657FC09A090939ADC1544 /* Pods-ZeinQillaShopUITests.debug.xcconfig */,
+				A4B92F5A640CF80A2F99DFCA /* Pods-ZeinQillaShopUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6A699C861F66365700EB0F04 = {
+			isa = PBXGroup;
+			children = (
+				6A699C911F66365700EB0F04 /* ZeinQillaShop */,
+				6A699CA91F66365700EB0F04 /* ZeinQillaShopTests */,
+				6A699CB41F66365700EB0F04 /* ZeinQillaShopUITests */,
+				6A699C901F66365700EB0F04 /* Products */,
+				1008DDFC8336733B04B506CD /* Pods */,
+				DF5590C19D3991907DC7C884 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		6A699C901F66365700EB0F04 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6A699C8F1F66365700EB0F04 /* ZeinQillaShop.app */,
+				6A699CA61F66365700EB0F04 /* ZeinQillaShopTests.xctest */,
+				6A699CB11F66365700EB0F04 /* ZeinQillaShopUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6A699C911F66365700EB0F04 /* ZeinQillaShop */ = {
+			isa = PBXGroup;
+			children = (
+				6A699CC61F6636BD00EB0F04 /* App Delegate */,
+				6A699CC31F66369600EB0F04 /* Controller */,
+				6A699CCD1F66444D00EB0F04 /* Extension */,
+				6A699CC41F66369C00EB0F04 /* Model */,
+				6A699CC91F663C8E00EB0F04 /* Resource */,
+				6A699CC81F663C7100EB0F04 /* Supporting Files */,
+				6A699CC51F6636A000EB0F04 /* View */,
+			);
+			path = ZeinQillaShop;
+			sourceTree = "<group>";
+		};
+		6A699CA91F66365700EB0F04 /* ZeinQillaShopTests */ = {
+			isa = PBXGroup;
+			children = (
+				6A699CAA1F66365700EB0F04 /* ZeinQillaShopTests.swift */,
+				6A699CAC1F66365700EB0F04 /* Info.plist */,
+			);
+			path = ZeinQillaShopTests;
+			sourceTree = "<group>";
+		};
+		6A699CB41F66365700EB0F04 /* ZeinQillaShopUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6A699CB51F66365700EB0F04 /* ZeinQillaShopUITests.swift */,
+				6A699CB71F66365700EB0F04 /* Info.plist */,
+			);
+			path = ZeinQillaShopUITests;
+			sourceTree = "<group>";
+		};
+		6A699CC31F66369600EB0F04 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				6A699CF11F668C5900EB0F04 /* ProductDetailController.swift */,
+				6A699CD21F66456E00EB0F04 /* Cart */,
+				6A6D85191F677AE100B84BE5 /* Category */,
+				6A699CD01F66456600EB0F04 /* Home */,
+				6A699CD11F66456A00EB0F04 /* Promo */,
+				6A699CD41F66457700EB0F04 /* Store */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		6A699CC41F66369C00EB0F04 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6A699CDE1F666A0200EB0F04 /* Banner.swift */,
+				6A699CDC1F66540700EB0F04 /* Product.swift */,
+				6A699CF31F66909400EB0F04 /* ProductDetail.swift */,
+				6A699CE61F66754500EB0F04 /* Promo.swift */,
+				6A699CEA1F66815F00EB0F04 /* Store */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		6A699CC51F6636A000EB0F04 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				6A699C9E1F66365700EB0F04 /* LaunchScreen.storyboard */,
+				6A699C961F66365700EB0F04 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		6A699CC61F6636BD00EB0F04 /* App Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				6A699C921F66365700EB0F04 /* AppDelegate.swift */,
+			);
+			name = "App Delegate";
+			sourceTree = "<group>";
+		};
+		6A699CC81F663C7100EB0F04 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6A699CA11F66365700EB0F04 /* Info.plist */,
+				6A699C991F66365700EB0F04 /* ZeinQillaShop.xcdatamodeld */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6A699CC91F663C8E00EB0F04 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				6A699C9C1F66365700EB0F04 /* Assets.xcassets */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		6A699CCD1F66444D00EB0F04 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6A699CCE1F66446800EB0F04 /* HexColorExtension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		6A699CD01F66456600EB0F04 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				6A699CCA1F66408300EB0F04 /* HomeController.swift */,
+				6A699CE01F666EAE00EB0F04 /* HomeCell.swift */,
+				6A699CE21F666EB900EB0F04 /* HomeHeaderCell.swift */,
+				6A699CE41F666F4200EB0F04 /* HomeCollectionCell.swift */,
+			);
+			name = Home;
+			sourceTree = "<group>";
+		};
+		6A699CD11F66456A00EB0F04 /* Promo */ = {
+			isa = PBXGroup;
+			children = (
+				6A699CD51F66459B00EB0F04 /* PromoController.swift */,
+				6A699CD91F664BBB00EB0F04 /* PromoCell.swift */,
+			);
+			name = Promo;
+			sourceTree = "<group>";
+		};
+		6A699CD21F66456E00EB0F04 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				6A6D851E1F6781D800B84BE5 /* CartController.swift */,
+				6A6D85201F67873500B84BE5 /* CartCell.swift */,
+			);
+			name = Cart;
+			sourceTree = "<group>";
+		};
+		6A699CD41F66457700EB0F04 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				6A699CD71F6645AF00EB0F04 /* StoreController.swift */,
+				6A699CE81F6680D900EB0F04 /* StoreCell.swift */,
+				6A699CEF1F66869800EB0F04 /* StoreDetailController.swift */,
+			);
+			name = Store;
+			sourceTree = "<group>";
+		};
+		6A699CEA1F66815F00EB0F04 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				6A699CEB1F66816900EB0F04 /* ListStore.swift */,
+				6A699CED1F66818E00EB0F04 /* Store.swift */,
+			);
+			name = Store;
+			sourceTree = "<group>";
+		};
+		6A6D85191F677AE100B84BE5 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				6A6D851A1F677B0100B84BE5 /* CategoryController.swift */,
+				6A6D851C1F677B1B00B84BE5 /* CategoryCell.swift */,
+			);
+			name = Category;
+			sourceTree = "<group>";
+		};
+		DF5590C19D3991907DC7C884 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7AA4D6D4EA0C76BB74FA56CA /* Pods_ZeinQillaShop.framework */,
+				123027261E556A3C6516BF56 /* Pods_ZeinQillaShopTests.framework */,
+				BF11AB035EF4F40518A4DBEF /* Pods_ZeinQillaShopUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6A699C8E1F66365700EB0F04 /* ZeinQillaShop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A699CBA1F66365700EB0F04 /* Build configuration list for PBXNativeTarget "ZeinQillaShop" */;
+			buildPhases = (
+				A04FCB6576FF6FDA05D01BEF /* [CP] Check Pods Manifest.lock */,
+				6A699C8B1F66365700EB0F04 /* Sources */,
+				6A699C8C1F66365700EB0F04 /* Frameworks */,
+				6A699C8D1F66365700EB0F04 /* Resources */,
+				D644F8AEE49DA66C023DD754 /* [CP] Embed Pods Frameworks */,
+				F64CA0C8E37F5856FF2EDC0B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZeinQillaShop;
+			productName = ZeinQillaShop;
+			productReference = 6A699C8F1F66365700EB0F04 /* ZeinQillaShop.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6A699CA51F66365700EB0F04 /* ZeinQillaShopTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A699CBD1F66365700EB0F04 /* Build configuration list for PBXNativeTarget "ZeinQillaShopTests" */;
+			buildPhases = (
+				DFA5E180DD46B9EC8F5BDEDC /* [CP] Check Pods Manifest.lock */,
+				6A699CA21F66365700EB0F04 /* Sources */,
+				6A699CA31F66365700EB0F04 /* Frameworks */,
+				6A699CA41F66365700EB0F04 /* Resources */,
+				F00322F0D87414319D4414C6 /* [CP] Embed Pods Frameworks */,
+				017151896E09A8A1796D23BB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A699CA81F66365700EB0F04 /* PBXTargetDependency */,
+			);
+			name = ZeinQillaShopTests;
+			productName = ZeinQillaShopTests;
+			productReference = 6A699CA61F66365700EB0F04 /* ZeinQillaShopTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6A699CB01F66365700EB0F04 /* ZeinQillaShopUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A699CC01F66365700EB0F04 /* Build configuration list for PBXNativeTarget "ZeinQillaShopUITests" */;
+			buildPhases = (
+				9708517043F92CE14C2C5C28 /* [CP] Check Pods Manifest.lock */,
+				6A699CAD1F66365700EB0F04 /* Sources */,
+				6A699CAE1F66365700EB0F04 /* Frameworks */,
+				6A699CAF1F66365700EB0F04 /* Resources */,
+				4545207E659A37139EE5FD33 /* [CP] Embed Pods Frameworks */,
+				0504BB34BCFDA8A85F4C5665 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A699CB31F66365700EB0F04 /* PBXTargetDependency */,
+			);
+			name = ZeinQillaShopUITests;
+			productName = ZeinQillaShopUITests;
+			productReference = 6A699CB11F66365700EB0F04 /* ZeinQillaShopUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6A699C871F66365700EB0F04 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Muhammad Husain Fadhlullah";
+				TargetAttributes = {
+					6A699C8E1F66365700EB0F04 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = GL558GZUF4;
+						ProvisioningStyle = Automatic;
+					};
+					6A699CA51F66365700EB0F04 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = GL558GZUF4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6A699C8E1F66365700EB0F04;
+					};
+					6A699CB01F66365700EB0F04 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = GL558GZUF4;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 6A699C8E1F66365700EB0F04;
+					};
+				};
+			};
+			buildConfigurationList = 6A699C8A1F66365700EB0F04 /* Build configuration list for PBXProject "ZeinQillaShop" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6A699C861F66365700EB0F04;
+			productRefGroup = 6A699C901F66365700EB0F04 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6A699C8E1F66365700EB0F04 /* ZeinQillaShop */,
+				6A699CA51F66365700EB0F04 /* ZeinQillaShopTests */,
+				6A699CB01F66365700EB0F04 /* ZeinQillaShopUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6A699C8D1F66365700EB0F04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A699CA01F66365700EB0F04 /* LaunchScreen.storyboard in Resources */,
+				6A699C9D1F66365700EB0F04 /* Assets.xcassets in Resources */,
+				6A699C981F66365700EB0F04 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A699CA41F66365700EB0F04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A699CAF1F66365700EB0F04 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		017151896E09A8A1796D23BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZeinQillaShopTests/Pods-ZeinQillaShopTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0504BB34BCFDA8A85F4C5665 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZeinQillaShopUITests/Pods-ZeinQillaShopUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4545207E659A37139EE5FD33 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZeinQillaShopUITests/Pods-ZeinQillaShopUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9708517043F92CE14C2C5C28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A04FCB6576FF6FDA05D01BEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D644F8AEE49DA66C023DD754 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZeinQillaShop/Pods-ZeinQillaShop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFA5E180DD46B9EC8F5BDEDC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		F00322F0D87414319D4414C6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZeinQillaShopTests/Pods-ZeinQillaShopTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F64CA0C8E37F5856FF2EDC0B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZeinQillaShop/Pods-ZeinQillaShop-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6A699C8B1F66365700EB0F04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A699CF41F66909400EB0F04 /* ProductDetail.swift in Sources */,
+				6A6D851B1F677B0100B84BE5 /* CategoryController.swift in Sources */,
+				6A699CEC1F66816900EB0F04 /* ListStore.swift in Sources */,
+				6A699CDA1F664BBB00EB0F04 /* PromoCell.swift in Sources */,
+				6A699CE31F666EB900EB0F04 /* HomeHeaderCell.swift in Sources */,
+				6A699CEE1F66818E00EB0F04 /* Store.swift in Sources */,
+				6A699C931F66365700EB0F04 /* AppDelegate.swift in Sources */,
+				6A699CE91F6680D900EB0F04 /* StoreCell.swift in Sources */,
+				6A699CDF1F666A0200EB0F04 /* Banner.swift in Sources */,
+				6A699CE51F666F4200EB0F04 /* HomeCollectionCell.swift in Sources */,
+				6A699CD81F6645AF00EB0F04 /* StoreController.swift in Sources */,
+				6A6D851F1F6781D800B84BE5 /* CartController.swift in Sources */,
+				6A6D85211F67873500B84BE5 /* CartCell.swift in Sources */,
+				6A699CE11F666EAE00EB0F04 /* HomeCell.swift in Sources */,
+				6A699CDD1F66540700EB0F04 /* Product.swift in Sources */,
+				6A699CD61F66459B00EB0F04 /* PromoController.swift in Sources */,
+				6A699C9B1F66365700EB0F04 /* ZeinQillaShop.xcdatamodeld in Sources */,
+				6A699CE71F66754600EB0F04 /* Promo.swift in Sources */,
+				6A699CCB1F66408300EB0F04 /* HomeController.swift in Sources */,
+				6A6D851D1F677B1B00B84BE5 /* CategoryCell.swift in Sources */,
+				6A699CF01F66869800EB0F04 /* StoreDetailController.swift in Sources */,
+				6A699CF21F668C5900EB0F04 /* ProductDetailController.swift in Sources */,
+				6A699CCF1F66446800EB0F04 /* HexColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A699CA21F66365700EB0F04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A699CAB1F66365700EB0F04 /* ZeinQillaShopTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A699CAD1F66365700EB0F04 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A699CB61F66365700EB0F04 /* ZeinQillaShopUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A699CA81F66365700EB0F04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A699C8E1F66365700EB0F04 /* ZeinQillaShop */;
+			targetProxy = 6A699CA71F66365700EB0F04 /* PBXContainerItemProxy */;
+		};
+		6A699CB31F66365700EB0F04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A699C8E1F66365700EB0F04 /* ZeinQillaShop */;
+			targetProxy = 6A699CB21F66365700EB0F04 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6A699C961F66365700EB0F04 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A699C971F66365700EB0F04 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		6A699C9E1F66365700EB0F04 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6A699C9F1F66365700EB0F04 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6A699CB81F66365700EB0F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6A699CB91F66365700EB0F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6A699CBB1F66365700EB0F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7353452DB9F9180B737205A1 /* Pods-ZeinQillaShop.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GL558GZUF4;
+				INFOPLIST_FILE = ZeinQillaShop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Husain.ZeinQillaShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		6A699CBC1F66365700EB0F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F802491C77E8A1920AEDD6EE /* Pods-ZeinQillaShop.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = GL558GZUF4;
+				INFOPLIST_FILE = ZeinQillaShop/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Husain.ZeinQillaShop;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		6A699CBE1F66365700EB0F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51E135A44302EBB35C4B686E /* Pods-ZeinQillaShopTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GL558GZUF4;
+				INFOPLIST_FILE = ZeinQillaShopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Husain.ZeinQillaShopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZeinQillaShop.app/ZeinQillaShop";
+			};
+			name = Debug;
+		};
+		6A699CBF1F66365700EB0F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E0EDF149C2F679C9D6D039E /* Pods-ZeinQillaShopTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = GL558GZUF4;
+				INFOPLIST_FILE = ZeinQillaShopTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Husain.ZeinQillaShopTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZeinQillaShop.app/ZeinQillaShop";
+			};
+			name = Release;
+		};
+		6A699CC11F66365700EB0F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E0657FC09A090939ADC1544 /* Pods-ZeinQillaShopUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = GL558GZUF4;
+				INFOPLIST_FILE = ZeinQillaShopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Husain.ZeinQillaShopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ZeinQillaShop;
+			};
+			name = Debug;
+		};
+		6A699CC21F66365700EB0F04 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4B92F5A640CF80A2F99DFCA /* Pods-ZeinQillaShopUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = GL558GZUF4;
+				INFOPLIST_FILE = ZeinQillaShopUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Husain.ZeinQillaShopUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = ZeinQillaShop;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6A699C8A1F66365700EB0F04 /* Build configuration list for PBXProject "ZeinQillaShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A699CB81F66365700EB0F04 /* Debug */,
+				6A699CB91F66365700EB0F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A699CBA1F66365700EB0F04 /* Build configuration list for PBXNativeTarget "ZeinQillaShop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A699CBB1F66365700EB0F04 /* Debug */,
+				6A699CBC1F66365700EB0F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A699CBD1F66365700EB0F04 /* Build configuration list for PBXNativeTarget "ZeinQillaShopTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A699CBE1F66365700EB0F04 /* Debug */,
+				6A699CBF1F66365700EB0F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A699CC01F66365700EB0F04 /* Build configuration list for PBXNativeTarget "ZeinQillaShopUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A699CC11F66365700EB0F04 /* Debug */,
+				6A699CC21F66365700EB0F04 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		6A699C991F66365700EB0F04 /* ZeinQillaShop.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				6A699C9A1F66365700EB0F04 /* ZeinQillaShop.xcdatamodel */,
+			);
+			currentVersion = 6A699C9A1F66365700EB0F04 /* ZeinQillaShop.xcdatamodel */;
+			path = ZeinQillaShop.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 6A699C871F66365700EB0F04 /* Project object */;
+}

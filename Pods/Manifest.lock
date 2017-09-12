@@ -1,0 +1,33 @@
+PODS:
+  - Alamofire (4.5.0)
+  - AlamofireImage (3.2.0):
+    - Alamofire (~> 4.1)
+  - DropDown (2)
+  - FlowingMenu (2.0.1)
+  - ImageSlideshow (1.3.2):
+    - ImageSlideshow/Core (= 1.3.2)
+  - ImageSlideshow/Alamofire (1.3.2):
+    - AlamofireImage (~> 3.0)
+    - ImageSlideshow/Core
+  - ImageSlideshow/Core (1.3.2)
+  - SlideMenuControllerSwift (3.0.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.4)
+  - DropDown
+  - FlowingMenu (~> 2.0.1)
+  - ImageSlideshow (~> 1.3)
+  - ImageSlideshow/Alamofire
+  - SlideMenuControllerSwift
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  AlamofireImage: 157ed682cc81d3b9db4fb90c1f12180ac552d93b
+  DropDown: 744784d9c9aa505100e942c16acd05430cbb2f0a
+  FlowingMenu: 097789ea7fcec5c94edd58765e00e27b31e62cf5
+  ImageSlideshow: a68a76fc618ebd2b7481ce355ad67d7097203976
+  SlideMenuControllerSwift: 9a163b16d54afab734add42858cba7ef7c307755
+
+PODFILE CHECKSUM: 99f64943a099d97ab08bb921ab4cb5e42582c7c6
+
+COCOAPODS: 1.2.1

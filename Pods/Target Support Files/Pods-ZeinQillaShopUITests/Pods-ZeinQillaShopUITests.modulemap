@@ -1,0 +1,6 @@
+framework module Pods_ZeinQillaShopUITests {
+  umbrella header "Pods-ZeinQillaShopUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

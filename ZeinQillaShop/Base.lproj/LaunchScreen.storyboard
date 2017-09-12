@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="LqB-Eb-ewW">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tDy-yQ-v57">
+            <objects>
+                <viewController id="LqB-Eb-ewW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tgO-eq-0O3"/>
+                        <viewControllerLayoutGuide type="bottom" id="cIe-bo-QsK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Um8-Yc-8Lh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_zq" translatesAutoresizingMaskIntoConstraints="NO" id="7wO-st-sWj">
+                                <rect key="frame" x="67.5" y="213.5" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7wO-st-sWj" secondAttribute="height" multiplier="1:1" id="Bws-yP-atc"/>
+                                    <constraint firstAttribute="width" constant="240" id="Hyc-QU-lmf"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="7wO-st-sWj" firstAttribute="centerX" secondItem="Um8-Yc-8Lh" secondAttribute="centerX" id="72a-iE-bpw"/>
+                            <constraint firstItem="7wO-st-sWj" firstAttribute="centerY" secondItem="Um8-Yc-8Lh" secondAttribute="centerY" id="hWL-Yg-mz8"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J8a-03-QKc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="467" y="-383"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo_zq" width="1918" height="1918"/>
+    </resources>
+</document>
